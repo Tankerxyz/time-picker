@@ -362,7 +362,7 @@ class Picker extends Component {
             name={name}
             onKeyDown={this.onKeyDown}
             disabled={disabled}
-            value={(value && value.format(this.getFormat())) || ''}
+            value={(value && value.format && value.format(this.getFormat())) || ''}
             autoComplete={autoComplete}
             onFocus={onFocus}
             onBlur={onBlur}
